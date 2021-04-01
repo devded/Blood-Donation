@@ -1,6 +1,6 @@
 <?php  
 $q="ALL";
- $connect = mysqli_connect('localhost','root','root','test'); 
+ $connect = mysqli_connect('localhost','root','','test'); 
  if (isset($_POST['q'])) {
     $q = $_POST['q'];
     $query ="SELECT * FROM person  WHERE Blood ='$q'";  
@@ -31,7 +31,6 @@ else{
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-
 
 
 

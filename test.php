@@ -1,14 +1,14 @@
 <?php
 
-$con = mysqli_connect('127.0.0.1','root','root');
+$con = mysqli_connect('localhost','root','','test');
  if (!$con)
  {
-     echo 'Not Connected To Server';
+    //echo 'Not Connected To Server';
  }
 
 if(!mysqli_select_db($con,'test'))
 {
-    echo 'Database Not Connected';
+    //echo 'Database Not Connected';
 }
 
 $Name = $_POST['name'];

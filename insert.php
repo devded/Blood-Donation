@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect('sql206.epizy.com','epiz_23015840','FtwlCAOi0Q');
+$con = mysqli_connect('localhost','root','','test');
  if (!$con)
  {
      echo 'Not Connected To Server';

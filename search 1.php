@@ -1,5 +1,5 @@
 <?php  
- $connect = mysqli_connect('127.0.0.1','root','root','test'); 
+ $connect = mysqli_connect('localhost','root','','test'); 
  if (isset($_POST['q'])) {
     $q = $_POST['q'];
     $query ="SELECT * FROM person  WHERE Name LIKE'%$q%'";  
